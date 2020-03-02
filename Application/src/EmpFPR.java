@@ -17,7 +17,7 @@ public class EmpFPR extends HttpServlet {
 		System.out.println(uotp);
 		
 		HttpSession session1=request.getSession(true);
-		String a = (String) session1.getAttribute("otp1");
+		String a = (String) session1.getAttribute("otp");
 		System.out.println(a);
 		
 		if(uotp.equals(a))
